@@ -1,0 +1,176 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100%;
+    background: #f5f7fa;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.signup-card {
+    width: 100%;
+    max-width: 400px;
+    background: linear-gradient(to bottom right, #e6f2f2, #0e948c);
+    border-radius: 10px;
+    padding: 30px 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.signup-card h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #222;
+}
+
+label span {
+    color: var(--danger-color);
+}
+
+input,
+select {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    width: 100%;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+select {
+    cursor: pointer;
+}
+
+.error {
+    color: var(--danger-color);
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.submit-btn {
+    background: linear-gradient(to right, var(--primary-color), #00c6ff);
+    border: none;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(to right, var(--primary-color), #0096cc);
+}
+
+.login-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-text a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .signup-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .signup-card {
+        width: 100%;
+        max-width: 90%;
+        padding: 25px 20px;
+    }
+
+    .signup-card h2 {
+        font-size: 22px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input,
+    select {
+        font-size: 13px;
+    }
+
+    .submit-btn {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .login-text {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-card h2 {
+        font-size: 20px;
+    }
+
+    input,
+    select {
+        font-size: 12px;
+    }
+
+    .submit-btn {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .toggle-password {
+        right: 8px;
+    }
+}

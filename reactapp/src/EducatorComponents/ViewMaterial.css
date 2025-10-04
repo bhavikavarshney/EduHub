@@ -1,0 +1,169 @@
+.view-material-container {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    background-color: var(--background-color);
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: var(--dark-color);
+    margin-top: 40px;
+}
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: var(--danger-color);
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: var(--danger-hover-color);
+}
+
+.search-box {
+    display: block;
+    margin: 10px 0;
+    padding: 8px 12px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.material-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.material-table th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.material-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    background-color: #fdfdfd;
+}
+
+.btn {
+    padding: 6px 14px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.show-btn {
+    background-color: var(--primary-color);
+}
+
+.show-btn:hover {
+    background-color: var(--primary-hover-color);
+}
+
+.edit-btn {
+    background-color: var(--success-color);
+}
+
+.edit-btn:hover {
+    background-color: var(--success-hover-color);
+}
+
+.delete-btn {
+    background-color: var(--danger-color);
+}
+
+.delete-btn:hover {
+    background-color: var(--danger-hover-color);
+}
+
+.icon {
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.btn:hover .icon {
+    transform: scale(1.2);
+    color: var(--secondary-color);
+}
+
+.material-table td {
+    background-color: #fdfdfd;
+}
+
+.material-table td button {
+    margin-right: 6px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.9em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.material-table td button[data-testid="edit-button"] {
+    background-color: var(--success-color);
+}
+
+.material-table td button[data-testid="edit-button"]:hover {
+    background-color: var(--success-hover-color);
+}
+
+.material-table td button[data-testid="delete-button"] {
+    background-color: var(--danger-color);
+}
+
+.material-table td button[data-testid="delete-button"]:hover {
+    background-color: var(--danger-hover-color);
+}
+
+@media (max-width: 576px) {
+    .button-td {
+        display: grid;
+    }
+
+    .page-title {
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: var(--dark-color);
+        margin-top: 40px;
+    }
+
+    .view-material-td {
+        display: grid;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .button-data {
+        display: flex;
+
+    }
+
+    .material-td {
+        display: grid;
+    }
+}

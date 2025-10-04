@@ -1,0 +1,84 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100% !important;
+    background: var(--background-color) !important;
+}
+
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.error-card {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 350px;
+}
+
+.error-card h2 {
+    color: var(--danger-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.error-card p {
+    font-size: 14px;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+.error-img {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 480px) {
+    .error-card {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .error-card h2 {
+        font-size: 18px;
+    }
+
+    .error-card p {
+        font-size: 13px;
+    }
+
+    .error-img {
+        width: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .error-card {
+        padding: 25px 30px;
+        max-width: 80%;
+    }
+
+    .error-card h2 {
+        font-size: 19px;
+    }
+
+    .error-card p {
+        font-size: 13.5px;
+    }
+
+    .error-img {
+        width: 130px;
+    }
+}

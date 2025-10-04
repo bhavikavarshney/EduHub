@@ -1,0 +1,145 @@
+.homepage {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--dark-color);
+    font-size: 36px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 20px;
+    border-radius: 6px;
+}
+
+.description-card {
+    background: var(--background-color);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 700px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* flex: 1; */
+}
+
+.description-card p {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.footer {
+    background: var(--dark-background-color);
+    color: #fff;
+    padding: 20px;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer p {
+    margin: 4px 0;
+    word-wrap: break-word;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+        padding: 5px 15px;
+    }
+
+    .description-card {
+        padding: 15px;
+        /* margin: 15px; */
+        max-width: 90%;
+    }
+
+    .description-card p {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+
+    .footer h3 {
+        font-size: 16px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 22px;
+        padding: 5px 10px;
+    }
+
+    .hero-img {
+        max-height: 250px;
+    }
+
+    .description-card{
+        margin-bottom: 10%;
+    }
+
+    .description-card p {
+        font-size: 13px;
+    }
+
+    .footer {
+        padding: 12px;
+        /* position: relative; */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 1000;
+
+    }
+
+    .footer h3 {
+        font-size: 15px;
+    }
+
+    .footer p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+}

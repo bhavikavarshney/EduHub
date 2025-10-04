@@ -1,0 +1,53 @@
+# node_modules
+reactapp/node_modules
+nodeapp/node_modules
+
+# logs
+*.log
+
+# test files
+nodeapp/tests/
+reactapp/src/tests/__mocks__/
+reactapp/src/tests/App.test.js
+nodejest/tests/server.test.js
+nodejest/
+
+# env
+reactapp/.env
+nodeapp/.env
+
+# github workflows
+.github/workflows/build.yml
+
+# others
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+nodeapp/uploads
+
+# temp
+# nodeapp/index.js
+# reactapp/src/utils/InputField.jsx
+# reactapp/src/utils/DatePicker.jsx
+# reactapp/src/utils/Button.jsx
+# reactapp/src/UserContext.js
+# reactapp/src/StudentComponents/EnrolledCourse.css
+# reactapp/src/Components/Toast.jsx
+# reactapp/src/Components/Signup.jsx
+# reactapp/src/Components/Login.jsx
+# reactapp/src/Components/AppNavbar.jsx
+
+# nodeapp/controllers/courseController.js
+# nodeapp/controllers/enrollmentController.js
+# nodeapp/controllers/userController.js
+# nodeapp/setupTests.js
+# reactapp/src/App.js
+# reactapp/src/Components/Login.css
+# reactapp/src/EducatorComponents/CourseForm.css
+# reactapp/src/StudentComponents/StudentNavbar.css
+# reactapp/src/StudentComponents/StudentViewCourse.css
+# nodeapp/authUtils.js
+# nodeapp/controllers/courseController.js
+# nodeapp/controllers/enrollmentController.js
+# reactapp/src/index.js

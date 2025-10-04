@@ -1,0 +1,31 @@
+:root {
+    --primary-color: #2196f3;
+    --primary-hover-color: #1976d2;
+ 
+    --secondary-color: #d1a4ff;
+    --secondary-hover-color: #b07be6;
+ 
+    --background-color: #f4f6f8;
+ 
+    --danger-color: #dc3545;
+    --danger-hover-color: #a71d2a;
+ 
+    --success-color: #27ae60;
+    --success-hover-color: #1e7e34;
+ 
+    --dark-color: #0a0a2a;
+    --dark-hover-color: #00001a;
+ 
+    --dark-background-color: #333;
+ 
+    --purple-color: #6b00ff;
+    --purple-hover-color: #4e00cc;
+ 
+    --lightblue-color: #00c6ff;
+    --lightblue-hover-color: #0090cc;
+  }
+ 
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}

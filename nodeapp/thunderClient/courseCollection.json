@@ -1,0 +1,75 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "courseCollection",
+    "dateExported": "2025-09-02T10:12:54.739Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "15743d98-9dbb-449f-8279-c2f538631ec5",
+            "colId": "732d24cb-5147-421e-b7b0-b7dfa4efd6c2",
+            "containerId": "",
+            "name": "getAllCourses",
+            "url": "",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-09-02T10:11:07.568Z",
+            "modified": "2025-09-02T10:11:07.568Z",
+            "headers": []
+        },
+        {
+            "_id": "e6496787-4ca0-49fb-ac01-85b887170d68",
+            "colId": "732d24cb-5147-421e-b7b0-b7dfa4efd6c2",
+            "containerId": "",
+            "name": "getCourseById",
+            "url": "",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-09-02T10:11:20.180Z",
+            "modified": "2025-09-02T10:11:20.180Z",
+            "headers": []
+        },
+        {
+            "_id": "f2ba1972-f124-481c-b3b9-8c6852b9d19f",
+            "colId": "732d24cb-5147-421e-b7b0-b7dfa4efd6c2",
+            "containerId": "",
+            "name": "addCourse",
+            "url": "",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2025-09-02T10:11:27.252Z",
+            "modified": "2025-09-02T10:11:34.582Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f0a26896-b82d-4c6c-beb3-f69ffc68657f",
+            "colId": "732d24cb-5147-421e-b7b0-b7dfa4efd6c2",
+            "containerId": "",
+            "name": "updateCourse",
+            "url": "",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2025-09-02T10:11:48.669Z",
+            "modified": "2025-09-02T10:11:58.022Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "33898e2f-b063-4fe7-b03c-0f62a1526583",
+            "colId": "732d24cb-5147-421e-b7b0-b7dfa4efd6c2",
+            "containerId": "",
+            "name": "deleteCourse",
+            "url": "",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2025-09-02T10:12:15.266Z",
+            "modified": "2025-09-02T10:12:23.884Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

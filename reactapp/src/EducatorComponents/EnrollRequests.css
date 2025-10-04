@@ -1,0 +1,362 @@
+.enroll-container {
+  max-width: 1300px;
+  margin: 40px auto;
+  padding: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.enroll-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.filter-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-button {
+  width: 100%;
+}
+
+.status-button {
+  width: 100%;
+}
+
+.enroll-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.search-bar {
+  padding: 8px 12px;
+  max-width: 360px;
+  margin: 8px 0 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.status-filter {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 14px;
+  margin: 8px 0 12px;
+  max-width: 300px;
+  /* appearance: none; */
+  cursor: pointer;
+}
+
+.enroll-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: #fff;
+  border: 1px solid #e9ecef;
+  /* border-radius: 8px; */
+  overflow: hidden;
+}
+
+.enroll-table thead {
+  background-color: var(--primary-color);
+}
+
+.enroll-table th,
+.enroll-table td {
+  padding: 10px 12px;
+  vertical-align: top;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.enroll-table th {
+  background-color: var(--primary-color);
+  font-weight: 600;
+  color: white;
+}
+
+.enroll-table tbody tr:hover {
+  background: #fbfbfc;
+}
+
+.truncate {
+  max-width: 420px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.actions {
+  margin-left: 0;
+}
+
+.action-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.action-buttons button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-show {
+  background-color: var(--primary-color);
+}
+
+.btn-approve {
+  background-color: #28a745;
+}
+
+.btn-reject {
+  background-color: #dc3545;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.enroll-modal {
+  max-width: 420px;
+}
+
+
+@media (max-width: 768px) {
+  .enroll-container {
+    padding: 12px;
+    margin: 20px 10px;
+  }
+
+  .enroll-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .enroll-title {
+    font-size: 20px;
+  }
+
+  .filter-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar,
+  .status-filter {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .enroll-table th,
+  .enroll-table td {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .action-buttons button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .pagination {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .pagination button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+
+  table {
+    display: block;
+    width: 100%;
+    border: none;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  tr {
+    display: block;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    margin: 0;
+  }
+
+  td {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 2px;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  td:last-child {
+    border-bottom: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    flex-shrink: 0;
+    width: 130px;
+    color: #333;
+  }
+
+  .icon-button {
+    border: 1px solid #6c757d;
+    color: #6c757d;
+    background-color: white;
+    padding: 1px 4px;
+    font-size: 12px;
+    min-width: 70px !important;
+    line-height: 1;
+  }
+
+  .icon {
+    width: 100px;
+  }
+
+  .status-button {
+    width: 100%;
+  }
+
+  .action-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .enroll-btn,
+  .view-btn,
+  .unenroll-btn,
+  .confirm-btn,
+  .cancel-btn {
+    font-size: 13px;
+    padding: 6px 10px;
+    min-width: 100px;
+    margin: 4px;
+  }
+
+  .search-bar-container {
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 15px;
+  }
+
+  .search-bar {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  .pagination,
+  .pagination-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .pagination button,
+  .pagination-btn {
+    padding: 6px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .pagination button:disabled,
+  .pagination-btn:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+  }
+
+  .page-info {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .modal-overlay {
+    padding: 20px;
+  }
+
+  .modal-d {
+    width: 100%;
+    max-width: 90%;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .modal-d p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .actions-buttons-icons-status {
+    display: grid;
+    margin-left: 0;
+    width: 100%;
+  }
+}
